@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\RANA GHOSH\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add expo-app-loading
+  C:\Program Files\nodejs\node.exe C:\Users\RANA GHOSH\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-webview@11.2.3
 
 PATH: 
   C:\Program Files\cmder\vendor\bin;C:\Program Files\cmder\vendor\git-for-windows\cmd;C:\Program Files\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Program Files\cmder\vendor\conemu-maximus5;C:\Program Files\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Java\jre1.8.0_281\bin;C:\Program Files\nodejs\;C:\Users\RANA GHOSH\AppData\Local\Microsoft\WindowsApps;C:\Users\RANA GHOSH\AppData\Roaming\Composer\vendor\bin;C:\Users\RANA GHOSH\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\RANA GHOSH\AppData\Roaming\npm;C:\Program Files\cmder\vendor\git-for-windows\mingw64\bin;C:\Program Files\cmder\vendor\git-for-windows\usr\bin;C:\Program Files\cmder
@@ -32,6 +32,7 @@ npm manifest:
       "@react-navigation/native": "^5.9.4",
       "@react-navigation/stack": "^5.14.4",
       "expo": "^41.0.1",
+      "expo-app-loading": "^1.0.3",
       "expo-font": "^9.1.0",
       "expo-status-bar": "~1.0.4",
       "react": "16.13.1",
@@ -3087,6 +3088,13 @@ Lockfile:
       snapdragon "^0.8.1"
       to-regex "^3.0.1"
   
+  expo-app-loading@^1.0.3:
+    version "1.0.3"
+    resolved "https://registry.yarnpkg.com/expo-app-loading/-/expo-app-loading-1.0.3.tgz#35c2dfd71aacd9f5c53777e3ff2ac07549e766df"
+    integrity sha512-zLheUgBCQoyybJrGxw81MWfxvlnHb7zatjLbmkNosqMwqq3MOPC/P4HwF6qYsrVUFO6PIzb4yq3lFO3RkCCfhw==
+    dependencies:
+      expo-splash-screen "~0.10.2"
+  
   expo-application@~3.1.2:
     version "3.1.2"
     resolved "https://registry.yarnpkg.com/expo-application/-/expo-application-3.1.2.tgz#7c93e8108a7f2a0be0afe37151f36c98e0111e7c"
@@ -3135,6 +3143,13 @@ Lockfile:
     version "9.1.2"
     resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-9.1.2.tgz#b3e52c7bef0ade975ae88637a2bf980f6b573368"
     integrity sha512-CCuEOQUNLYtMA0rt0sQ9u5LlIMH7lDJG7dImoorfKMsP95yHXy8dl3oCdtaz2zbsPgggVYeom9gE+gQu+Ki4rQ==
+  
+  expo-splash-screen@~0.10.2:
+    version "0.10.2"
+    resolved "https://registry.yarnpkg.com/expo-splash-screen/-/expo-splash-screen-0.10.2.tgz#3e3d7c24c4ed180a60ce3ec64a77eefd04dd0d97"
+    integrity sha512-ngelW7g5yFqk3LWbyLDDxi3LYXEfgGFCJddL/Q8S/C1pMUc5foW2j9i/q+akK8i5mjYtSx3+Bk/qbyX92QIF/w==
+    dependencies:
+      "@expo/configure-splash-screen" "0.3.4"
   
   expo-status-bar@~1.0.4:
     version "1.0.4"

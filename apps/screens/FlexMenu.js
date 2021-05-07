@@ -1,10 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View , TouchableOpacity, FlatList, ScrollView } from 'react-native';
+import { Text, View , TouchableOpacity, ScrollView } from 'react-native';
 import { globalStyles } from '../styles/GlobalStyles';
 import {flexContents} from '../contents/FlexContents';
 
 export default function App({navigation}) {
-  console.log(flexContents);
   return (
     <ScrollView>
     <View style={globalStyles.boxContainer}>
@@ -14,7 +13,7 @@ export default function App({navigation}) {
              onPress={() => {navigation.navigate('FlexDetails', item)}}
              key={item.key.toString()} 
              style={globalStyles.box}>
-             <Text>{item.title}</Text>
+             <Text style={{fontFamily: 'regular', fontSize: 16, textAlign: 'center'}}>{item.title}</Text>
              </TouchableOpacity>
              )
           })}
@@ -22,7 +21,3 @@ export default function App({navigation}) {
     </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  
-});

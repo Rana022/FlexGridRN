@@ -2,7 +2,8 @@ import { StyleSheet } from 'react-native';
 
 
 //colors
-// #fd8383, #ce405f, #691d43, #e9ebed 
+// #fd8383, #ce405f, #691d43, #e9ebed
+//unicode list view technique{`\u2022 ${route.params.note}`}
 export const globalStyles = StyleSheet.create({
     container: {
       flex: 1,
@@ -40,6 +41,24 @@ export const globalStyles = StyleSheet.create({
       backgroundColor: '#e9ebed',
       minHeight: "50%",
       marginVertical: 10,
-      borderRadius: 5
+      borderRadius: 5,
+      padding: 15
+    },
+    contentTitle:{
+      fontFamily: 'italic',
+      fontSize: 16,
+      color: '#fd8383',
+      textAlign: 'center',
+      marginBottom: 5
+    },
+    contentDetails:{
+      fontFamily: 'regular',
+      fontSize: 16,
+      color: '#333'
+    },
+    contentNotes:{
+      fontFamily: 'bold',
+      fontSize: 14,
+      color: '#333'
     }
   });

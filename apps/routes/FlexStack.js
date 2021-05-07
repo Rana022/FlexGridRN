@@ -11,13 +11,21 @@ function App() {
   return (
       <Stack.Navigator>
         <Stack.Screen name="FlexMenu" component={FlexMenu}
-        options={ ({navigation}) => {
+        options={ () => {
           return {
-           headerTitle: () => <Header navigation={navigation} title='Flex' />
+           headerTitle: () => <Header title='Flexbox' />
           }
         } }
         />
-        <Stack.Screen name="FlexDetails" component={FlexDetails} />
+        <Stack.Screen
+         name="FlexDetails"
+         component={FlexDetails}
+         options={
+          {
+            title: 'Flexbox'
+          }
+        }
+          />
       </Stack.Navigator>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App({navigation, title}) {
+export default function App({ title }) {
   return (
     <View style={styles.container}>
       <Text style={{color: '#691d43', fontFamily: 'bold', fontSize: 18}}>{title}</Text>

@@ -19,7 +19,7 @@ export default function App() {
             iconName = focused
               ? 'ios-information-circle'
               : 'ios-information-circle-outline';
-          } else if (route.name === 'Grid') {
+          } else if (route.name === 'About') {
             iconName = focused ? 'md-checkmark-circle' : 'ios-list';
           }
 
@@ -33,7 +33,7 @@ export default function App() {
       }}
       >
         <Tab.Screen name="Flex" component={FlexStack} />
-        <Tab.Screen name="Grid" component={GridStack} />
+        <Tab.Screen name="About" component={GridStack} />
       </Tab.Navigator>
     </NavigationContainer>
   );
